@@ -16,4 +16,4 @@ pacman -S ...
 ```
 
 ## Environments
-![Mashiro Ubuntu Environment](mashiro-ubuntu-environment.png)
+![Mashiro Ubuntu Environment](images/mashiro-ubuntu-environment.png)

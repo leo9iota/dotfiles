@@ -4,7 +4,7 @@
 </h1>
 Dotfiles for my Linux environment
 
-### Installation
+## Installation
 1. Clone the repository
 ```bash
 git clone https://github.com/leo9iota/dotfiles
@@ -14,3 +14,6 @@ git clone https://github.com/leo9iota/dotfiles
 ```bash
 pacman -S ...
 ```
+
+## Environments
+![Mashiro Ubuntu Environment](mashiro-ubuntu-environment.png)

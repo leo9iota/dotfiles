@@ -1,0 +1,65 @@
+{
+	/*
+	Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	$1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	Placeholders with the same ids are connected.
+	*/
+	"Create function statement": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fn",
+		"body": [
+			"function ${1:name}(${2:params}) {",
+			"  $3",
+			"}",
+		],
+		"description": "Create a function with statement syntax"
+	},
+
+	"Create function expression": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnexp",
+		"body": [
+			"const ${1:name} = function(${2:params}) {",
+			"  $3",
+			"}",
+		],
+		"description": "Create a function with expression syntax"
+	},
+
+	"Create arrow function": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "arrfn",
+		"body": [
+			"const ${1:name} = (${2:params}) => {",
+			"  $3",
+			"}",
+		],
+		"description": "Create a function with arrow syntax"
+	},
+
+	"Create if-statement": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "ifs",
+		"body": [
+			"if (${1:condition}) {",
+			"  $2",
+			"}",
+		],
+		"description": "Create an if-statement"
+	},
+	
+	"Create for-loop": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "forl",
+		"body": [
+			"for (let ${1:i} = ${2:start}; ${1:i} < ${3:end}; ${1:i}++) {",
+			"  $4",
+			"}"
+		],
+		"description": "Create an if-statement"
+	}
+		
+}

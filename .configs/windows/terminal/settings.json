@@ -1,11 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -16,8 +14,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -32,25 +29,20 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "cursorShape": "filledBox",
-            "font": 
-            {
+            "font": {
                 "face": "JetBrainsMono NF",
                 "size": 10.0
             }
         },
-        "list": 
-        [
+        "list": [
             {
                 "adjustIndistinguishableColors": "never",
                 "antialiasingMode": "cleartype",
@@ -58,8 +50,7 @@
                 "colorScheme": "Color Scheme 11",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": false,
-                "font": 
-                {
+                "font": {
                     "face": "FiraCode NFM Retina",
                     "size": 11.0,
                     "weight": "normal"
@@ -84,8 +75,7 @@
                 "cursorShape": "filledBox",
                 "elevate": false,
                 "experimental.retroTerminalEffect": false,
-                "font": 
-                {
+                "font": {
                     "face": "MesloLGM Nerd Font",
                     "size": 11.0,
                     "weight": "normal"
@@ -107,8 +97,7 @@
                 "cursorHeight": 100,
                 "cursorShape": "vintage",
                 "experimental.retroTerminalEffect": false,
-                "font": 
-                {
+                "font": {
                     "face": "MesloLGM Nerd Font Mono",
                     "size": 11.0
                 },
@@ -124,8 +113,7 @@
             {
                 "colorScheme": "Ubuntu-22.04-ColorScheme",
                 "cursorShape": "filledBox",
-                "font": 
-                {
+                "font": {
                     "face": "JetBrainsMono Nerd Font",
                     "size": 11.0
                 },
@@ -139,8 +127,7 @@
                 "useAcrylic": true
             },
             {
-                "font": 
-                {
+                "font": {
                     "size": 10.0
                 },
                 "guid": "{411b856a-3f95-5f91-8927-835e14052565}",
@@ -178,8 +165,7 @@
                 "cursorHeight": 20,
                 "cursorShape": "vintage",
                 "experimental.retroTerminalEffect": true,
-                "font": 
-                {
+                "font": {
                     "size": 14.0
                 },
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -200,8 +186,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",

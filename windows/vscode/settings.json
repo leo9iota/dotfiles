@@ -1,35 +1,34 @@
 /* 
 Extensions:
-    - Atom One Dark Theme (Mahmoud Ali)
-    - Code Runner (Jun Han)
-    - Code Spell Checker (Street Side Software)
-    - CodeSnap (adpyke)
-    - DotENV (mikestead)
-    - Error Lens (Alexander)
-    - ES7+ React/Redux/React-Native snippets (dsznajder)
-    - ESLint (Microsoft)
-    - Figma for VS Code (Figma)
-    - Git Graph (mhutchie)
-    - Live Server (Ritwick Dey)
-    - Love2D Support (Pixelbyte Studios)
-    - Lua (Tencent)
-    - Markdown All in One (Yu Zhang)
-    - Material Icon Theme (Philipp Kief)
-    - MUI Snippets (vscodeshift)
-    - One Dark Pro (binaryify)
-    - Output Colorizer (IBM)
-    - Path Intellisense (Christian Kohler)
-    - Prettier - Code formatter (Prettier)
-    - Pretty TypeScript Errors (yoavbls)
-    - Pylance (Microsoft)
-    - Python (Microsoft)
-    - Rewrap (stkb)
-    - Ruff (Astral Software)
-    - Tailwind CSS IntelliSense (Tailwind Labs)
-    - Tailwind Fold (Stivo)
-    - Todo Tree (Gruntfuggly)
-    - vscode-pdf (tomoki1207)
-    - vscode-styled-components (Styled Components)
+- Atom One Dark Theme (Mahmoud Ali)
+- Code Runner (Jun Han)
+- Code Spell Checker (Street Side Software)
+- CodeSnap (adpyke)
+- DotENV (mikestead)
+- Error Lens (Alexander)
+- ES7+ React/Redux/React-Native snippets (dsznajder)
+- ESLint (Microsoft)
+- Figma for VS Code (Figma)
+- Git Graph (mhutchie)
+- Live Server (Ritwick Dey)
+- Love2D Support (Pixelbyte Studios)
+- Lua (Tencent)
+- Markdown All in One (Yu Zhang)
+- Material Icon Theme (Philipp Kief)
+- MUI Snippets (vscodeshift)
+- One Dark Pro (binaryify)
+- Output Colorizer (IBM)
+- Path Intellisense (Christian Kohler)
+- Prettier - Code formatter (Prettier)
+- Pretty TypeScript Errors (yoavbls)
+- Pylance (Microsoft)
+- Python (Microsoft)
+- Rewrap (stkb)
+- Ruff (Astral Software)
+- Tailwind CSS IntelliSense (Tailwind Labs)
+- Todo Tree (Gruntfuggly)
+- vscode-pdf (tomoki1207)
+- vscode-styled-components (Styled Components)
 */
 {
     /* Theme */
@@ -40,13 +39,14 @@ Extensions:
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.tabs.defaultIcon": "terminal-bash",
     "terminal.integrated.shellIntegration.decorationsEnabled": "never",
-    "terminal.integrated.smoothScrolling": false,
+    "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cursorBlinking": true,
 
     /* Fonts */
     "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontSize": 10,
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 12,
     "errorLens.fontStyleItalic": true,
 
     /* Git */
@@ -65,16 +65,18 @@ Extensions:
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "editor.guides.bracketPairsHorizontal": "active",
-    
+
     /* Line numbers */
     "editor.lineNumbers": "on",
-    
+
     /* Prettier */
     "prettier.requireConfig": false,
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
     "prettier.printWidth": 100,
-    
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+
     /* Code Snap */
     "codesnap.transparentBackground": true,
     "codesnap.backgroundColor": "",
@@ -97,6 +99,7 @@ Extensions:
     "explorer.confirmDragAndDrop": false,
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.startupEditor": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
     "telemetry.telemetryLevel": "off",
 
     /* Live Server */
@@ -104,11 +107,11 @@ Extensions:
     "liveServer.settings.donotVerifyTags": true,
 
     /* Minimap */
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
 
     /* Tooltips */
     "editor.hover.enabled": true,
-    "editor.hover.sticky": true,
+    "editor.hover.sticky": false,
     "editor.hover.delay": 750,
 
     /* Word Highlighting */
@@ -134,7 +137,7 @@ Extensions:
 
     /* Code Spell Checker */
     "cSpell.userWords": [
-        "bellefair",
+        "Bellefair",
         "gaierror",
         "Grotesk",
         "headlessui",
@@ -186,7 +189,8 @@ Extensions:
 
     /* JavaScript Settings */
     "[javascript]": {
-        "editor.tabSize": 2,
+        "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
@@ -194,7 +198,8 @@ Extensions:
 
     /* TypeScript Settings */
     "[typescript]": {
-        "editor.tabSize": 2,
+        "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
@@ -203,6 +208,7 @@ Extensions:
     /* JavaScript React Settings */
     "[javascriptreact]": {
         "editor.tabSize": 2,
+        "prettier.tabWidth": 2,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -210,6 +216,7 @@ Extensions:
     /* TypeScript React Settings */
     "[typescriptreact]": {
         "editor.tabSize": 2,
+        "prettier.tabWidth": 2,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -217,20 +224,23 @@ Extensions:
     /* JSON Settings */
     "[json]": {
         "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
         "editor.detectIndentation": false,
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
     /* JSONC (JSON with Comments) Settings */
     "[jsonc]": {
         "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
         "editor.detectIndentation": false,
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
     /* HTML Settings */
     "[html]": {
         "editor.tabSize": 2,
+        "prettier.tabWidth": 2,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -240,8 +250,9 @@ Extensions:
     /* CSS Settings */
     "[css]": {
         "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
         "editor.detectIndentation": false,
-        "editor.defaultFormatter": "vscode.css-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "tailwindCSS.emmetCompletions": true,
     "tailwind-fold.foldStyle": "QUOTES",
@@ -251,7 +262,8 @@ Extensions:
 
     /* SCSS Settings */
     "[scss]": {
-        "editor.tabSize": 2,
+        "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -265,7 +277,7 @@ Extensions:
     "luahelper.format.keep_simple_control_block_one_line": true,
     
     /* LOVE 2D Settings */
-    "pixelbyte.love2d.path": "C:\\Users\\Leon\\scoop\\apps\\love\\current\\love.exe",
+    "pixelbyte.love2d.path": "C:\\Program Files\\LOVE\\love.exe",
     "luahelper.format.column_limit": 140,
     // "pixelbyte.love2d.revealStatus": true,
     
@@ -275,7 +287,7 @@ Extensions:
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
-    "python.defaultInterpreterPath": "C:\\Users\\Leon\\scoop\\apps\\python\\current",
+    "python.defaultInterpreterPath": "C:\\Users\\Nine\\scoop\\apps\\python\\current",
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
     "python.analysis.autoFormatStrings": true,
@@ -295,11 +307,5 @@ Extensions:
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one",
         "editor.wordWrap": "off"
-    },
-
-    /* XML Settings */
-    "[xml]": {
-        "editor.tabSize": 2,
-        "editor.detectIndentation": false,
     },
 }

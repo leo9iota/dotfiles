@@ -327,5 +327,5 @@ Extensions:
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one",
         "editor.wordWrap": "off"
-    },
+    }
 }

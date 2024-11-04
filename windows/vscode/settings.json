@@ -1,55 +1,61 @@
-/*
-Extensions:
-- adpyke.codesnap@1.3.4
-- akamud.vscode-theme-onedark@2.3.0
-- bradlc.vscode-tailwindcss@0.12.5
-- charliermarsh.ruff@2024.36.0
-- christian-kohler.path-intellisense@2.9.0
-- dbaeumer.vscode-eslint@3.0.10
-- dsznajder.es7-react-js-snippets@4.4.3
-- esbenp.prettier-vscode@10.4.0
-- formulahendry.code-runner@0.12.2
-- github.copilot@1.219.0
-- github.copilot-chat@0.18.1
-- gruntfuggly.todo-tree@0.0.226
-- ibm.output-colorizer@0.1.2
-- mechatroner.rainbow-csv@3.12.0
-- mhutchie.git-graph@1.30.0
-- mikestead.dotenv@1.0.1
-- ms-python.debugpy@2024.10.0
-- ms-python.python@2024.12.1
-- ms-python.vscode-pylance@2024.7.1
-- pixelbyte-studios.pixelbyte-love2d@0.1.25
-- pkief.material-icon-theme@5.8.0
-- redhat.vscode-xml@0.27.1
-- ritwickdey.liveserver@5.7.9
-- rust-lang.rust-analyzer@0.3.2053
-- stivo.tailwind-fold@0.2.0
-- stkb.rewrap@1.16.3
-- streetsidesoftware.code-spell-checker@3.0.1
-- styled-components.vscode-styled-components@1.7.8
-- tamasfe.even-better-toml@0.19.2
-- tomoki1207.pdf@1.2.2
-- usernamehw.errorlens@3.20.0
-- vadimcn.vscode-lldb@1.10.0
-- vscodeshift.mui-snippets@1.0.1
-- vue.volar@2.0.10
-- yinfei.luahelper@0.2.29
-- yoavbls.pretty-ts-errors@0.6.0
-- yzhang.markdown-all-in-one@3.6.2
-- zhuangtongfa.material-theme@3.17.2
-*/
+/** Extensions
+ * akamud.vscode-theme-onedark
+ * bradlc.vscode-tailwindcss
+ * charliermarsh.ruff
+ * christian-kohler.path-intellisense
+ * codeium.codeium
+ * dbaeumer.vscode-eslint
+ * dsznajder.es7-react-js-snippets
+ * esbenp.prettier-vscode
+ * formulahendry.code-runner
+ * golang.go
+ * mhutchie.git-graph
+ * mikestead.dotenv
+ * ms-python.debugpy
+ * ms-python.python
+ * ms-python.vscode-pylance
+ * pixelbyte-studios.pixelbyte-love2d
+ * pkief.material-icon-theme
+ * ritwickdey.liveserver
+ * stivo.tailwind-fold
+ * streetsidesoftware.code-spell-checker
+ * styled-components.vscode-styled-components
+ * timonwong.shellcheck
+ * usernamehw.errorlens
+ * vscode-icons-team.vscode-icons
+ * vscodeshift.mui-snippets
+ * yinfei.luahelper
+ * yoavbls.pretty-ts-errors
+ * yzhang.markdown-all-in-one
+ */
 {
-    /* Theme */
+    /* Editor */
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Atom One Dark",
-
-    /* Fonts */
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 13,
+    "editor.lineNumbers": "on",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.guides.bracketPairsHorizontal": "active",
+    "editor.cursorSmoothCaretAnimation": "off",
+    "editor.stickyScroll.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.hover.enabled": true,
+    "editor.hover.sticky": false,
+    "editor.hover.delay": 750,
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
+    "editor.matchBrackets": "never",
+
+    /* Terminal */
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
     "terminal.integrated.fontSize": 13,
-    "errorLens.fontStyleItalic": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.tabs.defaultIcon": "terminal-bash",
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.cursorBlinking": true,
 
     /* Git */
     "git.defaultBranchName": "master",
@@ -59,44 +65,18 @@ Extensions:
     "git.postCommitCommand": "none",
     "git.ignoreRebaseWarning": true,
 
-    /* IntelliSense */
-    "editor.codeLens": true,
-    "editor.parameterHints.enabled": true,
-    "editor.hover.enabled": true,
-    "editor.hover.sticky": false,
-    "editor.hover.delay": 1000,
-    "editor.inlayHints.enabled": "on",
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": true,
-        "strings": true
+    /* Codeium */
+    "codeium.enableCommandSideHintEducation": false,
+    "codeium.enableExplainProblem": false,
+    "codeium.enableInComments": false,
+    "codeium.enableCodeLens": false,
+    "codeium.enableConfig": {
+        "*": false
     },
-    "editor.linkedEditing": true,
-
-    // "emmet.showExpandedAbbreviation": "always",
-    // "emmet.triggerExpansionOnTab": true,
-    // "emmet.includeLanguages": {
-    //     "css": "css"
-    // },
-
-    /* Integrated Terminal */
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.tabs.defaultIcon": "terminal-bash",
-    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
-    "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.cursorBlinking": true,
 
     /* GitHub Copilot */
     "github.copilot.editor.enableAutoCompletions": false,
     "github.copilot.editor.enableCodeActions": false,
-
-    /* Bracket Pair Colorization */
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "editor.guides.bracketPairsHorizontal": "active",
-
-    /* Line numbers */
-    "editor.lineNumbers": "on",
 
     /* Prettier */
     "prettier.requireConfig": false,
@@ -106,19 +86,13 @@ Extensions:
     "prettier.tabWidth": 4,
     "prettier.useTabs": false,
 
-    /* Code Snap */
-    "codesnap.transparentBackground": true,
-    "codesnap.backgroundColor": "",
-    "codesnap.boxShadow": "",
-
     /* Auto Save */
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1,
 
     /* Misc */
     "output.smartScroll.enabled": false,
-    "editor.cursorSmoothCaretAnimation": "off",
-    "editor.stickyScroll.enabled": false,
+
     // "files.associations": {
     //     "*.css": "tailwindcss",
     //     "*.scss": "tailwindcss"
@@ -134,14 +108,6 @@ Extensions:
     /* Live Server */
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-
-    /* Minimap */
-    "editor.minimap.enabled": false,
-
-    /* Word Highlighting */
-    "editor.occurrencesHighlight": "off",
-    "editor.selectionHighlight": false,
-    "editor.matchBrackets": "never",
 
     /* Customize Word Highlighting */
     "workbench.colorCustomizations": {
@@ -160,6 +126,7 @@ Extensions:
     },
 
     /* Code Spell Checker */
+    "cSpell.enableFiletypes": ["!json", "!jsonc", "!markdown"],
     "cSpell.userWords": [
         "Bellefair",
         "gaierror",
@@ -182,9 +149,8 @@ Extensions:
         "termcolor"
     ],
 
-    "cSpell.enableFiletypes": ["!json", "!jsonc", "!markdown"],
-
     /* Code Runner */
+    "code-runner.enableAppInsights": false,
     "code-runner.executorMap": {
         "javascript": "node",
         "typescript": "ts-node",
@@ -205,9 +171,15 @@ Extensions:
         "bat": "cmd /c",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt"
     },
-    "code-runner.enableAppInsights": false,
 
-    /* JavaScript Settings */
+    /* Go */
+    "[go]": {
+        "editor.tabSize": 4
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "go.formatTool": "gofumpt",
+
+    /* JavaScript */
     "[javascript]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -216,7 +188,7 @@ Extensions:
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
 
-    /* TypeScript Settings */
+    /* TypeScript */
     "[typescript]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -225,7 +197,7 @@ Extensions:
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
 
-    /* JavaScript React Settings */
+    /* JavaScript React */
     "[javascriptreact]": {
         "editor.tabSize": 2,
         "prettier.tabWidth": 2,
@@ -233,7 +205,7 @@ Extensions:
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* TypeScript React Settings */
+    /* TypeScript React */
     "[typescriptreact]": {
         "editor.tabSize": 2,
         "prettier.tabWidth": 2,
@@ -241,7 +213,7 @@ Extensions:
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* JSON Settings */
+    /* JSON */
     "[json]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -249,7 +221,7 @@ Extensions:
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* JSONC (JSON with Comments) Settings */
+    /* JSONC (JSON with Comments) */
     "[jsonc]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -257,7 +229,7 @@ Extensions:
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* HTML Settings */
+    /* HTML */
     "[html]": {
         "editor.tabSize": 2,
         "prettier.tabWidth": 2,
@@ -267,7 +239,7 @@ Extensions:
     // "html.hover.documentation": false,
     // "html.hover.references": false,
 
-    /* CSS Settings */
+    /* CSS */
     "[css]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -280,7 +252,7 @@ Extensions:
     // "css.hover.documentation": false,
     // "css.hover.references": false,
 
-    /* SCSS Settings */
+    /* SCSS */
     "[scss]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -288,20 +260,7 @@ Extensions:
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* Lua Settings */
-    "[lua]": {
-        "editor.tabSize": 4,
-        "editor.detectIndentation": false,
-        "editor.defaultFormatter": "yinfei.luahelper"
-    },
-    "luahelper.format.keep_simple_control_block_one_line": true,
-
-    /* LOVE 2D Settings */
-    "pixelbyte.love2d.path": "C:\\Users\\Leon\\scoop\\shims\\love.exe",
-    "luahelper.format.column_limit": 140,
-    // "pixelbyte.love2d.revealStatus": true,
-
-    /* Python Settings */
+    /* Python */
     "[python]": {
         "editor.tabSize": 4,
         "editor.detectIndentation": false,
@@ -317,15 +276,22 @@ Extensions:
     "python.analysis.inlayHints.variableTypes": true,
     "python.analysis.completeFunctionParens": true,
 
-    /* Java Settings */
-    "[java]": {
+    /* Lua Settings */
+    "[lua]": {
         "editor.tabSize": 4,
-        "editor.detectIndentation": false
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "yinfei.luahelper"
     },
+    "luahelper.format.keep_simple_control_block_one_line": true,
 
-    /* Markdown Settings */
+    /* LOVE 2D */
+    "pixelbyte.love2d.path": "C:\\Program Files\\LOVE\\love.exe",
+    "luahelper.format.column_limit": 140,
+    // "pixelbyte.love2d.revealStatus": true,
+
+    /* Markdown */
     "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
-        "editor.wordWrap": "off"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.wordWrap": "on"
     }
 }

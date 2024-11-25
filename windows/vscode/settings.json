@@ -1,37 +1,62 @@
-/** Extensions
- * akamud.vscode-theme-onedark
- * bradlc.vscode-tailwindcss
- * charliermarsh.ruff
- * christian-kohler.path-intellisense
- * codeium.codeium
- * dbaeumer.vscode-eslint
- * dsznajder.es7-react-js-snippets
- * esbenp.prettier-vscode
- * formulahendry.code-runner
- * golang.go
- * mhutchie.git-graph
- * mikestead.dotenv
- * ms-python.debugpy
- * ms-python.python
- * ms-python.vscode-pylance
- * pixelbyte-studios.pixelbyte-love2d
- * pkief.material-icon-theme
- * ritwickdey.liveserver
- * stivo.tailwind-fold
- * streetsidesoftware.code-spell-checker
- * styled-components.vscode-styled-components
- * timonwong.shellcheck
- * usernamehw.errorlens
- * vscode-icons-team.vscode-icons
- * vscodeshift.mui-snippets
- * yinfei.luahelper
- * yoavbls.pretty-ts-errors
- * yzhang.markdown-all-in-one
- */
 {
-    /* Editor */
+    /**
+    /*     lllllll                                          999999999       iiii                            tttt                            
+    /*     l:::::l                                        99:::::::::99    i::::i                        ttt:::t                            
+    /*     l:::::l                                      99:::::::::::::99   iiii                         t:::::t                            
+    /*     l:::::l                                     9::::::99999::::::9                               t:::::t                            
+    /*      l::::l     eeeeeeeeeeee       ooooooooooo  9:::::9     9:::::9iiiiiii    ooooooooooo   ttttttt:::::ttttttt      aaaaaaaaaaaaa   
+    /*      l::::l   ee::::::::::::ee   oo:::::::::::oo9:::::9     9:::::9i:::::i  oo:::::::::::oo t:::::::::::::::::t      a::::::::::::a  
+    /*      l::::l  e::::::eeeee:::::eeo:::::::::::::::o9:::::99999::::::9 i::::i o:::::::::::::::ot:::::::::::::::::t      aaaaaaaaa:::::a 
+    /*      l::::l e::::::e     e:::::eo:::::ooooo:::::o 99::::::::::::::9 i::::i o:::::ooooo:::::otttttt:::::::tttttt               a::::a 
+    /*      l::::l e:::::::eeeee::::::eo::::o     o::::o   99999::::::::9  i::::i o::::o     o::::o      t:::::t              aaaaaaa:::::a 
+    /*      l::::l e:::::::::::::::::e o::::o     o::::o        9::::::9   i::::i o::::o     o::::o      t:::::t            aa::::::::::::a 
+    /*      l::::l e::::::eeeeeeeeeee  o::::o     o::::o       9::::::9    i::::i o::::o     o::::o      t:::::t           a::::aaaa::::::a 
+    /*      l::::l e:::::::e           o::::o     o::::o      9::::::9     i::::i o::::o     o::::o      t:::::t    tttttta::::a    a:::::a 
+    /*     l::::::le::::::::e          o:::::ooooo:::::o     9::::::9     i::::::io:::::ooooo:::::o      t::::::tttt:::::ta::::a    a:::::a 
+    /*     l::::::l e::::::::eeeeeeee  o:::::::::::::::o    9::::::9      i::::::io:::::::::::::::o      tt::::::::::::::ta:::::aaaa::::::a 
+    /*     l::::::l  ee:::::::::::::e   oo:::::::::::oo    9::::::9       i::::::i oo:::::::::::oo         tt:::::::::::tt a::::::::::aa:::a
+    /*     llllllll    eeeeeeeeeeeeee     ooooooooooo     99999999        iiiiiiii   ooooooooooo             ttttttttttt    aaaaaaaaaa  aaaa                                                                                                           
+    **/
+
+    /* -------------------- */
+    /* Extensions           */
+    /* -------------------- */
+    /* akamud.vscode-theme-onedark
+    /* bradlc.vscode-tailwindcss
+    /* charliermarsh.ruff
+    /* christian-kohler.path-intellisense
+    /* codeium.codeium
+    /* dbaeumer.vscode-eslint
+    /* dsznajder.es7-react-js-snippets
+    /* esbenp.prettier-vscode
+    /* formulahendry.code-runner
+    /* golang.go
+    /* mhutchie.git-graph
+    /* mikestead.dotenv
+    /* ms-python.debugpy
+    /* ms-python.python
+    /* ms-python.vscode-pylance
+    /* pixelbyte-studios.pixelbyte-love2d
+    /* pkief.material-icon-theme
+    /* ritwickdey.liveserver
+    /* stivo.tailwind-fold
+    /* streetsidesoftware.code-spell-checker
+    /* styled-components.vscode-styled-components
+    /* timonwong.shellcheck
+    /* usernamehw.errorlens
+    /* vscode-icons-team.vscode-icons
+    /* vscodeshift.mui-snippets
+    /* yinfei.luahelper
+    /* yoavbls.pretty-ts-errors
+    /* yzhang.markdown-all-in-one
+    **/
+
+    /* -------------------- */
+    /* Editor               */
+    /* -------------------- */
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Atom One Dark",
+    "workbench.startupEditor": "none",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 13,
     "editor.lineNumbers": "on",
@@ -39,7 +64,6 @@
     "editor.guides.bracketPairs": "active",
     "editor.guides.bracketPairsHorizontal": "active",
     "editor.cursorSmoothCaretAnimation": "off",
-    "editor.stickyScroll.enabled": false,
     "editor.minimap.enabled": false,
     "editor.hover.enabled": true,
     "editor.hover.sticky": false,
@@ -47,8 +71,14 @@
     "editor.occurrencesHighlight": "off",
     "editor.selectionHighlight": false,
     "editor.matchBrackets": "never",
+    "editor.linkedEditing": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.stickyScroll.maxLineCount": 5,
+    "editor.stickyScroll.defaultModel": "foldingProviderModel",
 
-    /* Terminal */
+    /* -------------------- */
+    /* Terminal             */
+    /* -------------------- */
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -57,59 +87,30 @@
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cursorBlinking": true,
 
-    /* Git */
-    "git.defaultBranchName": "master",
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "git.autofetch": true,
-    "git.postCommitCommand": "none",
-    "git.ignoreRebaseWarning": true,
-
-    /* Codeium */
-    "codeium.enableCommandSideHintEducation": false,
-    "codeium.enableExplainProblem": false,
-    "codeium.enableInComments": false,
-    "codeium.enableCodeLens": false,
-    "codeium.enableConfig": {
-        "*": false
-    },
-
-    /* GitHub Copilot */
-    "github.copilot.editor.enableAutoCompletions": false,
-    "github.copilot.editor.enableCodeActions": false,
-
-    /* Prettier */
-    "prettier.requireConfig": false,
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "prettier.printWidth": 100,
-    "prettier.tabWidth": 4,
-    "prettier.useTabs": false,
-
-    /* Auto Save */
+    /* -------------------- */
+    /* Files                */
+    /* -------------------- */
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1,
-
-    /* Misc */
-    "output.smartScroll.enabled": false,
-
     // "files.associations": {
     //     "*.css": "tailwindcss",
     //     "*.scss": "tailwindcss"
     // },
+
+    /* -------------------- */
+    /* Explorer             */
+    /* -------------------- */
     "explorer.confirmDelete": false,
     "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
+
+    /* -------------------- */
+    /* Miscellaneous        */
+    /* -------------------- */
+    "output.smartScroll.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.startupEditor": "none",
     "diffEditor.ignoreTrimWhitespace": false,
     "telemetry.telemetryLevel": "off",
-
-    /* Live Server */
-    "liveServer.settings.donotShowInfoMsg": true,
-    "liveServer.settings.donotVerifyTags": true,
-
-    /* Customize Word Highlighting */
     "workbench.colorCustomizations": {
         /* Similar Selection */
         // "editor.selectionHighlightBackground": "#0000",
@@ -125,31 +126,99 @@
         // "editorBracketMatch.background": "#0000"
     },
 
-    /* Code Spell Checker */
+    /* -------------------- */
+    /* Git                  */
+    /* -------------------- */
+    "git.defaultBranchName": "master",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.postCommitCommand": "none",
+    "git.ignoreRebaseWarning": true,
+
+    /* -------------------- */
+    /* Codeium              */
+    /* -------------------- */
+    "codeium.enableCommandSideHintEducation": false,
+    "codeium.enableExplainProblem": false,
+    "codeium.enableInComments": false,
+    "codeium.enableCodeLens": false,
+    "codeium.enableConfig": {
+        "*": false
+    },
+
+    /* -------------------- */
+    /* GitHub Copilot       */
+    /* -------------------- */
+    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.editor.enableCodeActions": false,
+
+    /* -------------------- */
+    /* Prettier             */
+    /* -------------------- */
+    "prettier.requireConfig": false,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+
+    /* -------------------- */
+    /* Live Server          */
+    /* -------------------- */
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+
+    /* -------------------- */
+    /* Code Spell Checker   */
+    /* -------------------- */
     "cSpell.enableFiletypes": ["!json", "!jsonc", "!markdown"],
     "cSpell.userWords": [
         "Bellefair",
         "gaierror",
+        "goleak",
+        "gomock",
+        "goreleaser",
         "Grotesk",
         "headlessui",
         "heroicons",
         "hwsrc",
+        "keybinds",
+        "linechart",
+        "linestyle",
+        "lopts",
+        "miekg",
+        "nakabonne",
         "netscan",
         "Nmap",
+        "notadomain",
         "OPENWEATHERMAP",
         "osclass",
         "osfamily",
         "osgen",
         "osmatch",
         "pdst",
+        "Perc",
+        "pflag",
         "sendrecv",
+        "stretchr",
         "swiper",
         "tablefmt",
         "tailwindcss",
-        "termcolor"
+        "tcell",
+        "termbox",
+        "termcolor",
+        "termdash",
+        "terminalapi",
+        "tsenart",
+        "unversioned",
+        "vegeta",
+        "widgetapi"
     ],
 
-    /* Code Runner */
+    /* -------------------- */
+    /* Code Runner          */
+    /* -------------------- */
     "code-runner.enableAppInsights": false,
     "code-runner.executorMap": {
         "javascript": "node",
@@ -172,14 +241,19 @@
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt"
     },
 
-    /* Go */
+    /* -------------------- */
+    /* Go                   */
+    /* -------------------- */
     "[go]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false
     },
     "go.toolsManagement.autoUpdate": true,
     "go.formatTool": "gofumpt",
 
-    /* JavaScript */
+    /* -------------------- */
+    /* JavaScript           */
+    /* -------------------- */
     "[javascript]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -188,7 +262,9 @@
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
 
-    /* TypeScript */
+    /* -------------------- */
+    /* TypeScript           */
+    /* -------------------- */
     "[typescript]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -197,7 +273,9 @@
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
 
-    /* JavaScript React */
+    /* -------------------- */
+    /* JavaScript React     */
+    /* -------------------- */
     "[javascriptreact]": {
         "editor.tabSize": 2,
         "prettier.tabWidth": 2,
@@ -205,7 +283,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* TypeScript React */
+    /* -------------------- */
+    /* TypeScript React     */
+    /* -------------------- */
     "[typescriptreact]": {
         "editor.tabSize": 2,
         "prettier.tabWidth": 2,
@@ -213,7 +293,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* JSON */
+    /* -------------------- */
+    /* JSON                 */
+    /* -------------------- */
     "[json]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -221,7 +303,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* JSONC (JSON with Comments) */
+    /* -------------------- */
+    /* JSONC                */
+    /* -------------------- */
     "[jsonc]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -229,7 +313,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* HTML */
+    /* -------------------- */
+    /* HTML                 */
+    /* -------------------- */
     "[html]": {
         "editor.tabSize": 2,
         "prettier.tabWidth": 2,
@@ -239,7 +325,9 @@
     // "html.hover.documentation": false,
     // "html.hover.references": false,
 
-    /* CSS */
+    /* -------------------- */
+    /* CSS                  */
+    /* -------------------- */
     "[css]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -252,7 +340,9 @@
     // "css.hover.documentation": false,
     // "css.hover.references": false,
 
-    /* SCSS */
+    /* -------------------- */
+    /* SCSS                 */
+    /* -------------------- */
     "[scss]": {
         "editor.tabSize": 4,
         "prettier.tabWidth": 4,
@@ -260,7 +350,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    /* Python */
+    /* -------------------- */
+    /* Python               */
+    /* -------------------- */
     "[python]": {
         "editor.tabSize": 4,
         "editor.detectIndentation": false,
@@ -276,7 +368,9 @@
     "python.analysis.inlayHints.variableTypes": true,
     "python.analysis.completeFunctionParens": true,
 
-    /* Lua Settings */
+    /* -------------------- */
+    /* Lua Settings         */
+    /* -------------------- */
     "[lua]": {
         "editor.tabSize": 4,
         "editor.detectIndentation": false,
@@ -284,12 +378,16 @@
     },
     "luahelper.format.keep_simple_control_block_one_line": true,
 
-    /* LOVE 2D */
+    /* -------------------- */
+    /* LOVE 2D              */
+    /* -------------------- */
     "pixelbyte.love2d.path": "C:\\Program Files\\LOVE\\love.exe",
     "luahelper.format.column_limit": 140,
     // "pixelbyte.love2d.revealStatus": true,
 
-    /* Markdown */
+    /* -------------------- */
+    /* Markdown             */
+    /* -------------------- */
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.wordWrap": "on"

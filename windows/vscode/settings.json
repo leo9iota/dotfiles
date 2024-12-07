@@ -54,8 +54,8 @@
     /* -------------------- */
     /* Editor               */
     /* -------------------- */
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 13,
@@ -172,7 +172,12 @@
     /* -------------------- */
     /* Code Spell Checker   */
     /* -------------------- */
-    "cSpell.enableFiletypes": ["!json", "!jsonc", "!markdown"],
+    "cSpell.enabledFileTypes": {
+        "json": false,
+        "jsonc": false,
+        "markdown": false,
+        "plaintext": false
+    },
     "cSpell.userWords": [
         "Bellefair",
         "gaierror",
@@ -242,16 +247,6 @@
     },
 
     /* -------------------- */
-    /* Go                   */
-    /* -------------------- */
-    "[go]": {
-        "editor.tabSize": 4,
-        "editor.detectIndentation": false
-    },
-    "go.toolsManagement.autoUpdate": true,
-    "go.formatTool": "gofumpt",
-
-    /* -------------------- */
     /* JavaScript           */
     /* -------------------- */
     "[javascript]": {
@@ -292,6 +287,16 @@
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+
+    /* -------------------- */
+    /* Go                   */
+    /* -------------------- */
+    "[go]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "go.formatTool": "gofumpt",
 
     /* -------------------- */
     /* JSON                 */

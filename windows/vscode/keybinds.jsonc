@@ -1,0 +1,47 @@
+[
+    /* -------------------- */
+    /* General Keybinds     */
+    /* -------------------- */
+    {
+        "key": "alt+i",
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+    },
+    {
+        "key": "alt+oem_5",
+        "command": "-editor.action.inlineSuggest.trigger",
+        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+    },
+    {
+        "key": "f12",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+
+    /* -------------------- */
+    /* Comment Keybinds     */
+    /* -------------------- */
+    {
+        "key": "shift+alt+q",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+a",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    /* -------------------- */
+    /* Love 2D Keybinds     */
+    /* -------------------- */
+    {
+        "key": "alt+enter",
+        "command": "pixelbyte.love2d.run",
+        "when": "editorTextFocus && editorLangId == 'lua'"
+    },
+    {
+        "key": "F2",
+        "command": "pixelbyte.love2d.help"
+    }
+]

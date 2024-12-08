@@ -396,5 +396,14 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.wordWrap": "on"
+    },
+
+    /* -------------------- */
+    /* VS Code Snippets     */
+    /* -------------------- */
+    "[snippets]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }

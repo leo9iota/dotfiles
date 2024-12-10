@@ -176,7 +176,8 @@
         "json": false,
         "jsonc": false,
         "markdown": false,
-        "plaintext": false
+        "plaintext": false,
+        "ignore": false
     },
     "cSpell.userWords": [
         "Bellefair",
@@ -216,6 +217,7 @@
         "termdash",
         "terminalapi",
         "tsenart",
+        "tseslint",
         "unversioned",
         "vegeta",
         "widgetapi"
@@ -405,5 +407,25 @@
         "editor.tabSize": 4,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "vscode.json-language-features"
+    },
+
+    /* -------------------- */
+    /* YAML                 */
+    /* -------------------- */
+    "[yaml]": {
+        "editor.tabSize": 2,
+        "prettier.tabWidth": 2,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    /* -------------------- */
+    /* Docker Compose       */
+    /* -------------------- */
+    "[dockercompose]": {
+        "editor.tabSize": 2,
+        "prettier.tabWidth": 2,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }

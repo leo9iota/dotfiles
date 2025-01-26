@@ -30,6 +30,8 @@
     /* dsznajder.es7-react-js-snippets
     /* esbenp.prettier-vscode
     /* formulahendry.code-runner
+    /* github.copilot
+    /* github.copilot-chat
     /* golang.go
     /* mhutchie.git-graph
     /* mikestead.dotenv
@@ -38,14 +40,18 @@
     /* ms-python.vscode-pylance
     /* pixelbyte-studios.pixelbyte-love2d
     /* pkief.material-icon-theme
+    /* redhat.vscode-xml
     /* ritwickdey.liveserver
+    /* shd101wyy.markdown-preview-enhanced
     /* stivo.tailwind-fold
     /* streetsidesoftware.code-spell-checker
     /* styled-components.vscode-styled-components
     /* timonwong.shellcheck
+    /* tobermory.es6-string-html
     /* usernamehw.errorlens
     /* vscode-icons-team.vscode-icons
     /* vscodeshift.mui-snippets
+    /* vue.volar
     /* yinfei.luahelper
     /* yoavbls.pretty-ts-errors
     /* yzhang.markdown-all-in-one
@@ -66,7 +72,7 @@
     "editor.cursorSmoothCaretAnimation": "off",
     "editor.minimap.enabled": false,
     "editor.hover.enabled": true,
-    "editor.hover.sticky": false,
+    "editor.hover.sticky": true,
     "editor.hover.delay": 750,
     "editor.occurrencesHighlight": "off",
     "editor.selectionHighlight": false,
@@ -110,6 +116,7 @@
     "output.smartScroll.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
     "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.maxComputationTime": 0,
     "telemetry.telemetryLevel": "off",
     "workbench.colorCustomizations": {
         /* Similar Selection */
@@ -180,6 +187,7 @@
         "ignore": false
     },
     "cSpell.userWords": [
+        "assemblyai",
         "Bellefair",
         "gaierror",
         "goleak",
@@ -288,6 +296,16 @@
         "prettier.tabWidth": 2,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    /* -------------------- */
+    /* Vue.js               */
+    /* -------------------- */
+    "[vue]": {
+        "editor.tabSize": 2,
+        "prettier.tabWidth": 2,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "Vue.volar"
     },
 
     /* -------------------- */
@@ -401,7 +419,7 @@
     },
 
     /* -------------------- */
-    /* VS Code Snippets     */
+    /* Code Snippets        */
     /* -------------------- */
     "[snippets]": {
         "editor.tabSize": 4,

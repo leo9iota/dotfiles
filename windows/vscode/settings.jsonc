@@ -233,7 +233,8 @@
         "tseslint",
         "unversioned",
         "vegeta",
-        "widgetapi"
+        "widgetapi",
+        "Nuxt"
     ],
 
     /* -------------------- */

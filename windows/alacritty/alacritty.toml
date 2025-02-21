@@ -5,6 +5,10 @@ import = ["C:\\Users\\Nine\\.config\\alacritty\\one-dark.toml"]
 [env]
 TERM = "xterm-256color"
 
+[terminal.shell]
+program = "C:\\Program Files\\Git\\bin\\bash.exe"
+args = ["--login", "-i"]
+
 [font.normal]
 family = "JetBrainsMono Nerd Font"
 style = "Regular"
@@ -25,6 +29,8 @@ blink_timeout = 0
 shape = "Block"
 blinking = "On"
 
-[terminal.shell]
-program = "C:\\Program Files\\Git\\bin\\bash.exe"
-args = ["--login", "-i"]
+[window]
+
+[window.dimensions]
+columns = 110
+lines = 35

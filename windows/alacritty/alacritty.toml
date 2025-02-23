@@ -31,6 +31,10 @@ blinking = "On"
 
 [window]
 
+[window.padding]
+x = 5
+y = 3
+
 [window.dimensions]
 columns = 110
 lines = 35

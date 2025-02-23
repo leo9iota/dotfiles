@@ -21,45 +21,50 @@
     /* -------------------- */
     /* Extensions           */
     /* -------------------- */
-    /* akamud.vscode-theme-onedark
-    /* bradlc.vscode-tailwindcss
-    /* charliermarsh.ruff
-    /* christian-kohler.path-intellisense
-    /* codeium.codeium
-    /* dbaeumer.vscode-eslint
-    /* doublebot.doublebot
-    /* dsznajder.es7-react-js-snippets
-    /* esbenp.prettier-vscode
-    /* formulahendry.code-runner
-    /* github.copilot
-    /* github.copilot-chat
-    /* golang.go
-    /* mechatroner.rainbow-csv
-    /* mhutchie.git-graph
-    /* mikestead.dotenv
-    /* ms-python.debugpy
-    /* ms-python.python
-    /* ms-python.vscode-pylance
-    /* pixelbyte-studios.pixelbyte-love2d
-    /* pkief.material-icon-theme
-    /* redhat.vscode-xml
-    /* ritwickdey.liveserver
-    /* shd101wyy.markdown-preview-enhanced
-    /* stivo.tailwind-fold
-    /* stkb.rewrap
-    /* streetsidesoftware.code-spell-checker
-    /* styled-components.vscode-styled-components
-    /* tamasfe.even-better-toml
-    /* timonwong.shellcheck
-    /* tobermory.es6-string-html
-    /* usernamehw.errorlens
-    /* vscode-icons-team.vscode-icons
-    /* vscodeshift.mui-snippets
-    /* vue.volar
-    /* yinfei.luahelper
-    /* yoavbls.pretty-ts-errors
-    /* yzhang.markdown-all-in-one
-    /* zhuangtongfa.material-theme
+    /* akamud.vscode-theme-onedark@2.3.0
+    /* antfu.goto-alias@0.2.1
+    /* bradlc.vscode-tailwindcss@0.14.6
+    /* charliermarsh.ruff@2025.10.0
+    /* christian-kohler.npm-intellisense@1.4.5
+    /* christian-kohler.path-intellisense@2.10.0
+    /* codeium.codeium@1.34.2
+    /* dbaeumer.vscode-eslint@3.0.10
+    /* doublebot.doublebot@0.0.189
+    /* dsznajder.es7-react-js-snippets@4.4.3
+    /* editorconfig.editorconfig@0.17.1
+    /* esbenp.prettier-vscode@11.0.0
+    /* formulahendry.code-runner@0.12.2
+    /* github.copilot@1.272.0
+    /* github.copilot-chat@0.24.1
+    /* golang.go@0.44.0
+    /* mechatroner.rainbow-csv@3.17.0
+    /* mhutchie.git-graph@1.30.0
+    /* mikestead.dotenv@1.0.1
+    /* ms-python.debugpy@2025.0.1
+    /* ms-python.python@2025.0.0
+    /* ms-python.vscode-pylance@2025.2.1
+    /* ms-vscode-remote.remote-containers@0.397.0
+    /* nuxtr.nuxtr-vscode@0.2.16
+    /* pixelbyte-studios.pixelbyte-love2d@0.1.26
+    /* pkief.material-icon-theme@5.19.0
+    /* redhat.vscode-xml@0.27.2
+    /* ritwickdey.liveserver@5.7.9
+    /* shd101wyy.markdown-preview-enhanced@0.8.15
+    /* stivo.tailwind-fold@0.2.0
+    /* stkb.rewrap@1.16.3
+    /* streetsidesoftware.code-spell-checker@4.0.34
+    /* styled-components.vscode-styled-components@1.7.8
+    /* tamasfe.even-better-toml@0.21.2
+    /* timonwong.shellcheck@0.37.7
+    /* tobermory.es6-string-html@2.17.0
+    /* usernamehw.errorlens@3.23.0
+    /* vscode-icons-team.vscode-icons@12.11.0
+    /* vscodeshift.mui-snippets@1.0.1
+    /* vue.volar@2.2.2
+    /* yinfei.luahelper@0.2.29
+    /* yoavbls.pretty-ts-errors@0.6.1
+    /* yzhang.markdown-all-in-one@3.6.2
+    /* zhuangtongfa.material-theme@3.19.0
     **/
 
     /* -------------------- */
@@ -86,6 +91,7 @@
     "editor.stickyScroll.enabled": true,
     "editor.stickyScroll.maxLineCount": 5,
     "editor.stickyScroll.defaultModel": "foldingProviderModel",
+    "editor.gotoLocation.multipleDefinitions": "goto",
 
     /* -------------------- */
     /* Terminal             */
@@ -180,62 +186,6 @@
     /* -------------------- */
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-
-    /* -------------------- */
-    /* Code Spell Checker   */
-    /* -------------------- */
-    "cSpell.enabledFileTypes": {
-        "json": false,
-        "jsonc": false,
-        "markdown": false,
-        "plaintext": false,
-        "ignore": false
-    },
-    "cSpell.userWords": [
-        "assemblyai",
-        "Bellefair",
-        "gaierror",
-        "goleak",
-        "gomock",
-        "goreleaser",
-        "Grotesk",
-        "headlessui",
-        "heroicons",
-        "hwsrc",
-        "keybinds",
-        "linechart",
-        "linestyle",
-        "lopts",
-        "miekg",
-        "nakabonne",
-        "netscan",
-        "Nmap",
-        "notadomain",
-        "OPENWEATHERMAP",
-        "osclass",
-        "osfamily",
-        "osgen",
-        "osmatch",
-        "pdst",
-        "Perc",
-        "pflag",
-        "sendrecv",
-        "stretchr",
-        "swiper",
-        "tablefmt",
-        "tailwindcss",
-        "tcell",
-        "termbox",
-        "termcolor",
-        "termdash",
-        "terminalapi",
-        "tsenart",
-        "tseslint",
-        "unversioned",
-        "vegeta",
-        "widgetapi",
-        "Nuxt"
-    ],
 
     /* -------------------- */
     /* Code Runner          */
@@ -451,5 +401,70 @@
         "prettier.tabWidth": 2,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+
+    /* -------------------- */
+    /* Code Spell Checker   */
+    /* -------------------- */
+    "cSpell.enabledFileTypes": {
+        "json": false,
+        "jsonc": false,
+        "markdown": false,
+        "plaintext": false,
+        "ignore": false
+    },
+    "cSpell.userWords": [
+        "assemblyai",
+        "Bellefair",
+        "gaierror",
+        "goleak",
+        "gomock",
+        "goreleaser",
+        "Grotesk",
+        "headlessui",
+        "heroicons",
+        "hwsrc",
+        "keybinds",
+        "linechart",
+        "linestyle",
+        "lopts",
+        "miekg",
+        "nakabonne",
+        "netscan",
+        "Nmap",
+        "notadomain",
+        "OPENWEATHERMAP",
+        "osclass",
+        "osfamily",
+        "osgen",
+        "osmatch",
+        "pdst",
+        "Perc",
+        "pflag",
+        "sendrecv",
+        "stretchr",
+        "swiper",
+        "tablefmt",
+        "tailwindcss",
+        "tcell",
+        "termbox",
+        "termcolor",
+        "termdash",
+        "terminalapi",
+        "tsenart",
+        "tseslint",
+        "unversioned",
+        "vegeta",
+        "widgetapi",
+        "Nuxt",
+        "nuxtjs",
+        "Nuxt.js",
+        "shadcn",
+        "Pinia",
+        "Alacritty",
+        "Catppuccin",
+        "Reka",
+        "vueuse",
+        "lucide"
+    ]
 }

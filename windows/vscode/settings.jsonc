@@ -23,47 +23,48 @@
     /* -------------------- */
     /* akamud.vscode-theme-onedark@2.3.0
     /* antfu.goto-alias@0.2.1
-    /* bradlc.vscode-tailwindcss@0.14.6
-    /* charliermarsh.ruff@2025.10.0
+    /* bradlc.vscode-tailwindcss@0.14.11
+    /* charliermarsh.ruff@2025.22.0
     /* christian-kohler.npm-intellisense@1.4.5
     /* christian-kohler.path-intellisense@2.10.0
-    /* codeium.codeium@1.34.2
+    /* codeium.codeium@1.42.3
     /* dbaeumer.vscode-eslint@3.0.10
-    /* doublebot.doublebot@0.0.189
+    /* doublebot.doublebot@0.0.191
     /* dsznajder.es7-react-js-snippets@4.4.3
-    /* editorconfig.editorconfig@0.17.1
+    /* editorconfig.editorconfig@0.17.2
     /* esbenp.prettier-vscode@11.0.0
     /* formulahendry.code-runner@0.12.2
-    /* github.copilot@1.272.0
-    /* github.copilot-chat@0.24.1
-    /* golang.go@0.44.0
-    /* mechatroner.rainbow-csv@3.17.0
+    /* github.copilot@1.291.0
+    /* github.copilot-chat@0.25.1
+    /* golang.go@0.46.1
+    /* mechatroner.rainbow-csv@3.18.0
     /* mhutchie.git-graph@1.30.0
     /* mikestead.dotenv@1.0.1
-    /* ms-python.debugpy@2025.0.1
-    /* ms-python.python@2025.0.0
-    /* ms-python.vscode-pylance@2025.2.1
-    /* ms-vscode-remote.remote-containers@0.397.0
+    /* ms-python.debugpy@2025.4.1
+    /* ms-python.python@2025.2.0
+    /* ms-python.vscode-pylance@2025.3.2
+    /* ms-vscode-remote.remote-containers@0.401.0
     /* nuxtr.nuxtr-vscode@0.2.16
     /* pixelbyte-studios.pixelbyte-love2d@0.1.26
-    /* pkief.material-icon-theme@5.19.0
-    /* redhat.vscode-xml@0.27.2
+    /* pkief.material-icon-theme@5.20.0
+    /* redhat.vscode-xml@0.28.0
     /* ritwickdey.liveserver@5.7.9
-    /* shd101wyy.markdown-preview-enhanced@0.8.15
+    /* shd101wyy.markdown-preview-enhanced@0.8.18
     /* stivo.tailwind-fold@0.2.0
     /* stkb.rewrap@1.16.3
-    /* streetsidesoftware.code-spell-checker@4.0.34
+    /* streetsidesoftware.code-spell-checker@4.0.40
     /* styled-components.vscode-styled-components@1.7.8
+    /* sumneko.lua@3.13.9
     /* tamasfe.even-better-toml@0.21.2
     /* timonwong.shellcheck@0.37.7
     /* tobermory.es6-string-html@2.17.0
-    /* usernamehw.errorlens@3.23.0
+    /* usernamehw.errorlens@3.24.0
     /* vscode-icons-team.vscode-icons@12.11.0
     /* vscodeshift.mui-snippets@1.0.1
-    /* vue.volar@2.2.2
+    /* vue.volar@2.2.8
     /* yinfei.luahelper@0.2.29
     /* yoavbls.pretty-ts-errors@0.6.1
-    /* yzhang.markdown-all-in-one@3.6.2
+    /* yzhang.markdown-all-in-one@3.6.3
     /* zhuangtongfa.material-theme@3.19.0
     **/
 
@@ -109,10 +110,10 @@
     /* -------------------- */
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1,
-    // "files.associations": {
-    //     "*.css": "tailwindcss",
-    //     "*.scss": "tailwindcss"
-    // },
+    "files.associations": {
+        "*.css": "tailwindcss",
+        "*.scss": "tailwindcss"
+    },
 
     /* -------------------- */
     /* Explorer             */
@@ -129,6 +130,10 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.maxComputationTime": 0,
     "telemetry.telemetryLevel": "off",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.svg": "default"
+    },
     "workbench.colorCustomizations": {
         /* Similar Selection */
         // "editor.selectionHighlightBackground": "#0000",
@@ -195,7 +200,7 @@
         "javascript": "node",
         "typescript": "ts-node",
         "python": "python -u",
-        "lua": "lua53",
+        "lua": "love .",
         "go": "go run",
         "sass": "sass --style expanded",
         "scss": "scss --style expanded",
@@ -339,7 +344,6 @@
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
-    "python.defaultInterpreterPath": "C:\\Users\\Nine\\scoop\\apps\\python\\current",
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
     "python.analysis.autoFormatStrings": true,
@@ -350,21 +354,50 @@
     "python.analysis.completeFunctionParens": true,
 
     /* -------------------- */
-    /* Lua Settings         */
+    /* Lua                  */
     /* -------------------- */
     "[lua]": {
         "editor.tabSize": 4,
         "editor.detectIndentation": false,
-        "editor.defaultFormatter": "yinfei.luahelper"
+        "editor.defaultFormatter": "sumneko.lua"
     },
-    "luahelper.format.keep_simple_control_block_one_line": true,
+    "Lua.format.defaultConfig": {
+        "indent_style": "space",
+        "indent_size": "4",
+        "quote_style": "double",
+        "max_line_length": "80",
+        "end_of_line": "auto",
+        "space_after_comment_dash": "true",
+        "space_around_math_operator": "true",
+        "space_after_comma": "true",
+        "space_after_comma_in_for_statement": "true",
+        "space_around_concat_operator": "true",
+        "space_around_logical_operator": "true",
+        "space_around_assign_operator": "true",
+        "break_before_braces": "false",
+        "align_array_table": "true",
+        "break_all_list_when_line_exceed": "true",
+        "continuation_indent": "4",
+        "trailing_table_separator": "keep"
+    },
+    "Lua.codeLens.enable": true,
+    "Lua.hint.enable": true,
+    "Lua.hint.setType": true,
+    "Lua.hint.arrayIndex": "Enable",
 
     /* -------------------- */
-    /* LOVE 2D              */
+    /* Lua (old)            */
     /* -------------------- */
-    "pixelbyte.love2d.path": "C:\\Program Files\\LOVE\\love.exe",
-    "luahelper.format.column_limit": 140,
-    // "pixelbyte.love2d.revealStatus": true,
+    // "[lua]": {
+    //     "editor.tabSize": 4,
+    //     "editor.detectIndentation": false,
+    //     "editor.defaultFormatter": "yinfei.luahelper"
+    // },
+    // "luahelper.format.spaces_inside_table_braces": true,
+    // "luahelper.format.keep_simple_control_block_one_line": true,
+    // "luahelper.format.keep_simple_function_one_line": true,
+    // "luahelper.format.chop_down_table": false,
+    // "luahelper.format.column_limit": 80,
 
     /* -------------------- */
     /* Markdown             */
@@ -414,8 +447,14 @@
         "ignore": false
     },
     "cSpell.userWords": [
+        "Alacritty",
         "assemblyai",
         "Bellefair",
+        "bestaudio",
+        "bestvideo",
+        "Catppuccin",
+        "collidable",
+        "domcontentloaded",
         "gaierror",
         "goleak",
         "gomock",
@@ -424,15 +463,23 @@
         "headlessui",
         "heroicons",
         "hwsrc",
+        "iconify",
         "keybinds",
+        "keypressed",
         "linechart",
         "linestyle",
         "lopts",
+        "LÖVE",
+        "lucide",
         "miekg",
         "nakabonne",
         "netscan",
+        "networkidle",
         "Nmap",
         "notadomain",
+        "Nuxt",
+        "Nuxt.js",
+        "nuxtjs",
         "OPENWEATHERMAP",
         "osclass",
         "osfamily",
@@ -441,7 +488,13 @@
         "pdst",
         "Perc",
         "pflag",
+        "Pinia",
+        "Platformer",
+        "Reka",
+        "respawn",
+        "respawning",
         "sendrecv",
+        "shadcn",
         "stretchr",
         "swiper",
         "tablefmt",
@@ -453,18 +506,12 @@
         "terminalapi",
         "tsenart",
         "tseslint",
+        "untint",
         "unversioned",
         "vegeta",
-        "widgetapi",
-        "Nuxt",
-        "nuxtjs",
-        "Nuxt.js",
-        "shadcn",
-        "Pinia",
-        "Alacritty",
-        "Catppuccin",
-        "Reka",
+        "vsync",
+        "vueschool",
         "vueuse",
-        "lucide"
+        "widgetapi"
     ]
 }

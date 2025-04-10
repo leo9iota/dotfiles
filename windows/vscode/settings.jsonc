@@ -23,43 +23,51 @@
     /* -------------------- */
     /* akamud.vscode-theme-onedark@2.3.0
     /* antfu.goto-alias@0.2.1
-    /* bradlc.vscode-tailwindcss@0.14.11
+    /* augment.vscode-augment@0.404.1
+    /* bradlc.vscode-tailwindcss@0.14.15
     /* charliermarsh.ruff@2025.22.0
     /* christian-kohler.npm-intellisense@1.4.5
     /* christian-kohler.path-intellisense@2.10.0
-    /* codeium.codeium@1.42.3
+    /* codeium.codeium@1.42.7
     /* dbaeumer.vscode-eslint@3.0.10
+    /* docker.docker@0.4.6
+    /* donjayamanne.githistory@0.6.20
     /* doublebot.doublebot@0.0.191
     /* dsznajder.es7-react-js-snippets@4.4.3
     /* editorconfig.editorconfig@0.17.2
     /* esbenp.prettier-vscode@11.0.0
     /* formulahendry.code-runner@0.12.2
-    /* github.copilot@1.291.0
-    /* github.copilot-chat@0.25.1
+    /* github.copilot@1.300.0
+    /* github.copilot-chat@0.26.3
+    /* github.vscode-github-actions@0.27.1
     /* golang.go@0.46.1
-    /* mechatroner.rainbow-csv@3.18.0
+    /* jock.svg@1.5.4
+    /* mechatroner.rainbow-csv@3.19.0
     /* mhutchie.git-graph@1.30.0
     /* mikestead.dotenv@1.0.1
-    /* ms-python.debugpy@2025.4.1
-    /* ms-python.python@2025.2.0
-    /* ms-python.vscode-pylance@2025.3.2
-    /* ms-vscode-remote.remote-containers@0.401.0
+    /* ms-azuretools.vscode-docker@1.29.5
+    /* ms-python.debugpy@2025.6.0
+    /* ms-python.python@2025.4.0
+    /* ms-python.vscode-pylance@2025.4.1
+    /* ms-vscode-remote.remote-containers@0.409.0
+    /* nimlang.nimlang@1.6.0
     /* nuxtr.nuxtr-vscode@0.2.16
     /* pixelbyte-studios.pixelbyte-love2d@0.1.26
-    /* pkief.material-icon-theme@5.20.0
-    /* redhat.vscode-xml@0.28.0
+    /* pkief.material-icon-theme@5.21.2
+    /* redhat.vscode-xml@0.28.1
     /* ritwickdey.liveserver@5.7.9
     /* shd101wyy.markdown-preview-enhanced@0.8.18
+    /* sinjs.holyc@1.0.1
     /* stivo.tailwind-fold@0.2.0
     /* stkb.rewrap@1.16.3
-    /* streetsidesoftware.code-spell-checker@4.0.40
+    /* streetsidesoftware.code-spell-checker@4.0.45
     /* styled-components.vscode-styled-components@1.7.8
-    /* sumneko.lua@3.13.9
+    /* sumneko.lua@3.14.0
     /* tamasfe.even-better-toml@0.21.2
     /* timonwong.shellcheck@0.37.7
     /* tobermory.es6-string-html@2.17.0
-    /* usernamehw.errorlens@3.24.0
-    /* vscode-icons-team.vscode-icons@12.11.0
+    /* usernamehw.errorlens@3.25.0
+    /* vscode-icons-team.vscode-icons@12.12.0
     /* vscodeshift.mui-snippets@1.0.1
     /* vue.volar@2.2.8
     /* yinfei.luahelper@0.2.29
@@ -126,7 +134,7 @@
     /* Miscellaneous        */
     /* -------------------- */
     "output.smartScroll.enabled": false,
-    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.untrustedFiles": "prompt",
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.maxComputationTime": 0,
     "telemetry.telemetryLevel": "off",
@@ -175,6 +183,9 @@
     /* -------------------- */
     "github.copilot.editor.enableAutoCompletions": false,
     "github.copilot.editor.enableCodeActions": false,
+    "github.copilot.enable": {
+        "*": false
+    },
 
     /* -------------------- */
     /* Prettier             */
@@ -270,36 +281,6 @@
     },
 
     /* -------------------- */
-    /* Go                   */
-    /* -------------------- */
-    "[go]": {
-        "editor.tabSize": 4,
-        "editor.detectIndentation": false
-    },
-    "go.toolsManagement.autoUpdate": true,
-    "go.formatTool": "gofumpt",
-
-    /* -------------------- */
-    /* JSON                 */
-    /* -------------------- */
-    "[json]": {
-        "editor.tabSize": 4,
-        "prettier.tabWidth": 4,
-        "editor.detectIndentation": false,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-
-    /* -------------------- */
-    /* JSONC                */
-    /* -------------------- */
-    "[jsonc]": {
-        "editor.tabSize": 4,
-        "prettier.tabWidth": 4,
-        "editor.detectIndentation": false,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-
-    /* -------------------- */
     /* HTML                 */
     /* -------------------- */
     "[html]": {
@@ -315,16 +296,26 @@
     /* CSS                  */
     /* -------------------- */
     "[css]": {
-        "editor.tabSize": 4,
-        "prettier.tabWidth": 4,
+        "editor.tabSize": 2,
+        "prettier.tabWidth": 2,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // "css.hover.documentation": false,
+    // "css.hover.references": false,
+
+    /* -------------------- */
+    /* Tailwind CSS         */
+    /* -------------------- */
+    "[tailwindcss]": {
+        "editor.tabSize": 2,
+        "prettier.tabWidth": 2,
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "tailwindCSS.emmetCompletions": true,
     "tailwind-fold.foldStyle": "QUOTES",
     "tailwind-fold.unfoldIfLineSelected": true,
-    // "css.hover.documentation": false,
-    // "css.hover.references": false,
 
     /* -------------------- */
     /* SCSS                 */
@@ -335,6 +326,16 @@
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+
+    /* -------------------- */
+    /* Go                   */
+    /* -------------------- */
+    "[go]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "go.formatTool": "gofumpt",
 
     /* -------------------- */
     /* Python               */
@@ -359,31 +360,23 @@
     "[lua]": {
         "editor.tabSize": 4,
         "editor.detectIndentation": false,
-        "editor.defaultFormatter": "sumneko.lua"
+        "editor.defaultFormatter": "yinfei.luahelper"
     },
-    "Lua.format.defaultConfig": {
-        "indent_style": "space",
-        "indent_size": "4",
-        "quote_style": "double",
-        "max_line_length": "80",
-        "end_of_line": "auto",
-        "space_after_comment_dash": "true",
-        "space_around_math_operator": "true",
-        "space_after_comma": "true",
-        "space_after_comma_in_for_statement": "true",
-        "space_around_concat_operator": "true",
-        "space_around_logical_operator": "true",
-        "space_around_assign_operator": "true",
-        "break_before_braces": "false",
-        "align_array_table": "true",
-        "break_all_list_when_line_exceed": "true",
-        "continuation_indent": "4",
-        "trailing_table_separator": "keep"
-    },
-    "Lua.codeLens.enable": true,
-    "Lua.hint.enable": true,
-    "Lua.hint.setType": true,
-    "Lua.hint.arrayIndex": "Enable",
+    "luahelper.format.indent_width": 4,
+    "luahelper.format.continuation_indent_width": 4,
+    "luahelper.format.column_limit": 140,
+    "luahelper.format.spaces_inside_table_braces": false,
+    "luahelper.format.keep_simple_control_block_one_line": false,
+    "luahelper.format.keep_simple_function_one_line": false,
+    "luahelper.format.chop_down_table": true,
+    "luahelper.format.chop_down_kv_table": true,
+    "luahelper.format.single_quote_to_double_quote": true,
+    "luahelper.format.spaces_before_call": 1,
+    "luahelper.format.extra_sep_at_table_end": true,
+    "luahelper.format.spaces_around_equals_in_field": true,
+    "luahelper.format.break_before_functioncall_rp": true,
+    "luahelper.format.align_parameter": true,
+    "luahelper.base.formatErrShow": true,
 
     /* -------------------- */
     /* Lua (old)            */
@@ -391,13 +384,61 @@
     // "[lua]": {
     //     "editor.tabSize": 4,
     //     "editor.detectIndentation": false,
-    //     "editor.defaultFormatter": "yinfei.luahelper"
+    //     "editor.defaultFormatter": "sumneko.lua"
     // },
-    // "luahelper.format.spaces_inside_table_braces": true,
-    // "luahelper.format.keep_simple_control_block_one_line": true,
-    // "luahelper.format.keep_simple_function_one_line": true,
-    // "luahelper.format.chop_down_table": false,
-    // "luahelper.format.column_limit": 80,
+    // "Lua.format.defaultConfig": {
+    //     "indent_style": "space",
+    //     "indent_size": "4",
+    //     "quote_style": "double",
+    //     "max_line_length": "80",
+    //     "end_of_line": "auto",
+    //     "space_after_comment_dash": "true",
+    //     "space_around_math_operator": "true",
+    //     "space_after_comma": "true",
+    //     "space_after_comma_in_for_statement": "true",
+    //     "space_around_concat_operator": "true",
+    //     "space_around_logical_operator": "true",
+    //     "space_around_assign_operator": "true",
+    //     "break_before_braces": "false",
+    //     "align_array_table": "true",
+    //     "break_all_list_when_line_exceed": "true",
+    //     "continuation_indent": "4",
+    //     "trailing_table_separator": "keep"
+    // },
+    // "Lua.codeLens.enable": true,
+    // "Lua.hint.enable": true,
+    // "Lua.hint.setType": true,
+    // "Lua.hint.arrayIndex": "Enable",
+    // "Lua.diagnostics.globals": ["love"]
+
+    /* -------------------- */
+    /* Nim                  */
+    /* -------------------- */
+    // "[nim]": {
+    //     "editor.tabSize": 4,
+    //     "editor.detectIndentation": false,
+    //     "editor.defaultFormatter": "NimLang.nimlang"
+    // },
+
+    /* -------------------- */
+    /* JSON                 */
+    /* -------------------- */
+    "[json]": {
+        "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    /* -------------------- */
+    /* JSONC                */
+    /* -------------------- */
+    "[jsonc]": {
+        "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
     /* -------------------- */
     /* Markdown             */
@@ -405,15 +446,6 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.wordWrap": "on"
-    },
-
-    /* -------------------- */
-    /* Code Snippets        */
-    /* -------------------- */
-    "[snippets]": {
-        "editor.tabSize": 4,
-        "editor.detectIndentation": false,
-        "editor.defaultFormatter": "vscode.json-language-features"
     },
 
     /* -------------------- */
@@ -427,12 +459,75 @@
     },
 
     /* -------------------- */
+    /* XML                  */
+    /* -------------------- */
+    "[xml]": {
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "xml.format.enforceQuoteStyle": "preferred",
+    "xml.preferences.quoteStyle": "double",
+
+    /* -------------------- */
+    /* SVG                  */
+    /* -------------------- */
+    "[svg]": {
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "jock.svg"
+    },
+    "svg.completion.emmet": true,
+    "svg.completion.showAdvanced": true,
+
+    /* -------------------- */
+    /* GitHub Actions       */
+    /* -------------------- */
+    "[github-actions-workflow]": {
+        "editor.tabSize": 2,
+        "prettier.tabWidth": 2,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    /* -------------------- */
+    /* Dockerfile           */
+    /* -------------------- */
+    "[dockerfile]": {
+        // "editor.tabSize": 2,
+        // "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+
+    /* -------------------- */
     /* Docker Compose       */
     /* -------------------- */
     "[dockercompose]": {
         "editor.tabSize": 2,
         "prettier.tabWidth": 2,
         "editor.detectIndentation": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    /* -------------------- */
+    /* Code Snippets        */
+    /* -------------------- */
+    "[snippets]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+
+    /* -------------------- */
+    /* Git Ignore           */
+    /* -------------------- */
+    "[ignore]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    /* -------------------- */
+    /* GraphQL              */
+    /* -------------------- */
+    "[graphql]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
@@ -455,11 +550,15 @@
         "Catppuccin",
         "collidable",
         "domcontentloaded",
+        "drawcalls",
+        "drei",
         "gaierror",
+        "Goland",
         "goleak",
         "gomock",
         "goreleaser",
         "Grotesk",
+        "hdri",
         "headlessui",
         "heroicons",
         "hwsrc",
@@ -471,10 +570,15 @@
         "lopts",
         "LÖVE",
         "lucide",
+        "metalness",
         "miekg",
+        "minheight",
+        "minwidth",
+        "mousepressed",
         "nakabonne",
         "netscan",
         "networkidle",
+        "nhartland",
         "Nmap",
         "notadomain",
         "Nuxt",
@@ -490,6 +594,8 @@
         "pflag",
         "Pinia",
         "Platformer",
+        "pyautogui",
+        "pynput",
         "Reka",
         "respawn",
         "respawning",

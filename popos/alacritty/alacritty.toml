@@ -1,0 +1,40 @@
+[general]
+working_directory = "/home/nine/"
+import = ["/home/nine/.config/alacritty/themes/one-dark.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[terminal.shell]
+program = "/bin/bash"
+args = ["--login", "-i"]
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[cursor]
+blink_interval = 650
+blink_timeout = 0
+
+[cursor.style]
+shape = "Block"
+blinking = "On"
+
+[window]
+
+[window.padding]
+x = 5
+y = 3
+
+[window.dimensions]
+columns = 110
+lines = 35

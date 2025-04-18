@@ -1,4 +1,24 @@
 /**
+/*     lllllll                                          999999999       iiii                            tttt                            
+/*     l:::::l                                        99:::::::::99    i::::i                        ttt:::t                            
+/*     l:::::l                                      99:::::::::::::99   iiii                         t:::::t                            
+/*     l:::::l                                     9::::::99999::::::9                               t:::::t                            
+/*      l::::l     eeeeeeeeeeee       ooooooooooo  9:::::9     9:::::9iiiiiii    ooooooooooo   ttttttt:::::ttttttt      aaaaaaaaaaaaa   
+/*      l::::l   ee::::::::::::ee   oo:::::::::::oo9:::::9     9:::::9i:::::i  oo:::::::::::oo t:::::::::::::::::t      a::::::::::::a  
+/*      l::::l  e::::::eeeee:::::eeo:::::::::::::::o9:::::99999::::::9 i::::i o:::::::::::::::ot:::::::::::::::::t      aaaaaaaaa:::::a 
+/*      l::::l e::::::e     e:::::eo:::::ooooo:::::o 99::::::::::::::9 i::::i o:::::ooooo:::::otttttt:::::::tttttt               a::::a 
+/*      l::::l e:::::::eeeee::::::eo::::o     o::::o   99999::::::::9  i::::i o::::o     o::::o      t:::::t              aaaaaaa:::::a 
+/*      l::::l e:::::::::::::::::e o::::o     o::::o        9::::::9   i::::i o::::o     o::::o      t:::::t            aa::::::::::::a 
+/*      l::::l e::::::eeeeeeeeeee  o::::o     o::::o       9::::::9    i::::i o::::o     o::::o      t:::::t           a::::aaaa::::::a 
+/*      l::::l e:::::::e           o::::o     o::::o      9::::::9     i::::i o::::o     o::::o      t:::::t    tttttta::::a    a:::::a 
+/*     l::::::le::::::::e          o:::::ooooo:::::o     9::::::9     i::::::io:::::ooooo:::::o      t::::::tttt:::::ta::::a    a:::::a 
+/*     l::::::l e::::::::eeeeeeee  o:::::::::::::::o    9::::::9      i::::::io:::::::::::::::o      tt::::::::::::::ta:::::aaaa::::::a 
+/*     l::::::l  ee:::::::::::::e   oo:::::::::::oo    9::::::9       i::::::i oo:::::::::::oo         tt:::::::::::tt a::::::::::aa:::a
+/*     llllllll    eeeeeeeeeeeeee     ooooooooooo     99999999        iiiiiiii   ooooooooooo             ttttttttttt    aaaaaaaaaa  aaaa                                                                                                           
+**/
+
+/**
+/* Description
 /* - Place your global snippets here.
 /* - Each snippet is defined under a snippet name and has a scope, prefix, body and description.
 /* - Add comma separated ids of the languages where the snippet is applicable in the scope field.
@@ -38,22 +58,58 @@
         "scope": "javascript,javascriptreact,typescript,typescriptreact",
         "prefix": "fnexp",
         "body": [
-            "const ${1:name} = function(${2:params}) {",
+            "${1:name} = function(${2:params}) {",
             "    $3",
             "}",
         ],
         "description": "Create a traditional function expression"
     },
 
-    "Arrow function": {
+    "Arrow function expression": {
         "scope": "javascript,javascriptreact,typescript,typescriptreact",
-        "prefix": "arrfn",
+        "prefix": "fnarr",
         "body": [
-            "const ${1:name} = (${2:param}) => {",
+            "${1:name} = (${2:param}) => {",
             "    $3",
             "}",
         ],
         "description": "Create an arrow function expression"
+    },
+
+    /* ------------------------- */
+    /* Async function snippets   */
+    /* ------------------------- */
+    "Async function statement": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "ayfns",
+        "body": [
+            "async function ${1:name}(${2:params}) {",
+            "    $3",
+            "}",
+        ],
+        "description": "Create a async function statement"
+    },
+
+    "Async function expression": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "ayfnexp",
+        "body": [
+            "${1:name} = async function(${2:params}) {",
+            "    $3",
+            "}",
+        ],
+        "description": "Create a traditional async function expression"
+    },
+
+    "Async arrow function expression": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "ayfnarr",
+        "body": [
+            "${1:name} = async (${2:param}) => {",
+            "    $3",
+            "}",
+        ],
+        "description": "Create an async arrow function expression"
     },
 
     /* ------------------------- */

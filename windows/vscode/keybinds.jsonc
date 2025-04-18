@@ -1,26 +1,6 @@
+// Place your key bindings in this file to override the defaultsauto[]
 [
-    /* -------------------- */
-    /* General Keybinds     */
-    /* -------------------- */
-    {
-        "key": "alt+i",
-        "command": "editor.action.inlineSuggest.trigger",
-        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
-    },
-    {
-        "key": "alt+oem_5",
-        "command": "-editor.action.inlineSuggest.trigger",
-        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
-    },
-    {
-        "key": "f12",
-        "command": "renameFile",
-        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-
-    /* -------------------- */
-    /* Comment Keybinds     */
-    /* -------------------- */
+    /* Comments */
     {
         "key": "shift+alt+q",
         "command": "editor.action.blockComment",
@@ -32,9 +12,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
 
-    /* -------------------- */
-    /* Love 2D Keybinds     */
-    /* -------------------- */
+    /* Love2D */
     {
         "key": "alt+enter",
         "command": "pixelbyte.love2d.run",
@@ -43,5 +21,134 @@
     {
         "key": "F2",
         "command": "pixelbyte.love2d.help"
+    },
+    {
+        "key": "shift+alt+1",
+        "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+numpad_add",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "alt+i",
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+    },
+    {
+        "key": "alt+oem_5",
+        "command": "-editor.action.inlineSuggest.trigger",
+        "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+    },
+    {
+        "key": "ctrl+n ctrl+w",
+        "command": "workbench.action.chat.openInNewWindow"
+    },
+    {
+        "key": "ctrl+n ctrl+e",
+        "command": "workbench.action.chat.openInEditor",
+        "when": "chatIsEnabled"
+    },
+    {
+        "key": "f12",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "f2",
+        "command": "-renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+n ctrl+w",
+        "command": "workbench.action.chat.openInNewWindow",
+        "when": "chatIsEnabled"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "-vscode-augment.focusAugmentPanel"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-vscode-augment.focusAugmentPanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "panelAlignment == 'center' || panelPosition != 'bottom' && panelPosition != 'top'"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "alt+k",
+        "command": "-editor.action.accessibilityHelpConfigureKeybindings",
+        "when": "accessibilityHelpIsShown && accessibleViewHasUnassignedKeybindings"
+    },
+    {
+        "key": "alt+k",
+        "command": "-keybindings.editor.recordSearchKeys",
+        "when": "inKeybindings && inKeybindingsSearch"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "-workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
+    },
+    {
+        "key": "ctrl+oem_1",
+        "command": "-vscode-augment.next-edit.background.goto-hinting",
+        "when": "vscode-augment.enableNextEdit && vscode-augment.nextEdit.canGotoHinting && vscode-augment.nextEdit.enableGotoHinting"
+    },
+    {
+        "key": "ctrl+oem_1",
+        "command": "-vscode-augment.next-edit.background.next",
+        "when": "vscode-augment.enableNextEdit && vscode-augment.nextEdit.canNext && !vscode-augment.nextEdit.enableGotoHinting"
+    },
+    {
+        "key": "ctrl+oem_1",
+        "command": "workbench.view.extension.augment-chat"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-markdown.extension.editing.toggleMath",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.togglePanel"
     }
 ]
